@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="94Y-T0-rLo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selection Modes-->
+        <scene sceneID="bt9-iJ-0yH">
+            <objects>
+                <tableViewController id="5Z7-Dc-YTA" customClass="MyTVC" customModule="tableViewSelectionModes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="L6g-gb-ytk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Ltp-k0-5SV">
+                            <rect key="frame" x="0.0" y="64" width="375" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qWF-hg-YZK">
+                                    <segments>
+                                        <segment title="Navigate"/>
+                                        <segment title="Promote"/>
+                                        <segment title="Delete"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="onChangeSelectionType:" destination="5Z7-Dc-YTA" eventType="valueChanged" id="3c5-LY-727"/>
+                                    </connections>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="qWF-hg-YZK" secondAttribute="bottom" constant="8" id="Aqt-fg-kXR"/>
+                                <constraint firstItem="qWF-hg-YZK" firstAttribute="leading" secondItem="Ltp-k0-5SV" secondAttribute="leading" constant="8" id="MEl-kY-CeJ"/>
+                                <constraint firstAttribute="trailing" secondItem="qWF-hg-YZK" secondAttribute="trailing" constant="8" id="pI1-UU-hIS"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicCell" id="xJv-Zv-8HA">
+                                <rect key="frame" x="0.0" y="138" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xJv-Zv-8HA" id="JZD-r3-1Sn">
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Z7-Dc-YTA" id="CC3-08-DKc"/>
+                            <outlet property="delegate" destination="5Z7-Dc-YTA" id="nfL-r5-7iB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Selection Modes" id="opP-kt-hZW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwg-vc-UIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="158.77061469265368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qyo-wg-81e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="94Y-T0-rLo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cER-5H-i0F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Z7-Dc-YTA" kind="relationship" relationship="rootViewController" id="uRP-yd-v0U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9j-rO-EoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352.80000000000001" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+</document>
