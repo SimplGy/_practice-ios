@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072623541D67808D00B66CA4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 072623531D67808D00B66CA4 /* README.md */; };
 		0750D05E1D6761FD008ACEFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0750D05D1D6761FD008ACEFC /* AppDelegate.swift */; };
 		0750D0601D6761FD008ACEFC /* MyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0750D05F1D6761FD008ACEFC /* MyTVC.swift */; };
 		0750D0631D6761FD008ACEFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0750D0611D6761FD008ACEFC /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		072623531D67808D00B66CA4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0750D05A1D6761FD008ACEFC /* tableViewSelectionModes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewSelectionModes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0750D05D1D6761FD008ACEFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0750D05F1D6761FD008ACEFC /* MyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTVC.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				0750D0641D6761FD008ACEFC /* Assets.xcassets */,
 				0750D0661D6761FD008ACEFC /* LaunchScreen.storyboard */,
 				0750D0691D6761FD008ACEFC /* Info.plist */,
-				072623531D67808D00B66CA4 /* README.md */,
 			);
 			path = tableViewSelectionModes;
 			sourceTree = "<group>";
@@ -140,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072623541D67808D00B66CA4 /* README.md in Sources */,
 				0750D0601D6761FD008ACEFC /* MyTVC.swift in Sources */,
 				0750D05E1D6761FD008ACEFC /* AppDelegate.swift in Sources */,
 			);
