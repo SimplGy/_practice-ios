@@ -1,6 +1,6 @@
-# Fancy Table View Selection
+<img align="right" src="/fancyTableViewSelection/_screenshots/TVCfancySelection.gif?raw=true">
 
-![animation](/fancyTableViewSelection/_screenshots/TVCfancySelection.gif?raw=true)
+# Fancy Table View Selection
 
 Sometimes, you want a tableview that do it all:
 
@@ -15,6 +15,8 @@ Mostly this is tricky, I think, because of the way selection and editing apis fo
 This project glues them all together in a way that is isolated and hopefully quite clear.
 
 It uses the standard `tableView.tableView.indexPathsForSelectedRows` for the ui state and does deletion and selection with existing, platform standard controls.
+
+<br><br><br><br><br><br><br><br>
 
 ||||
 | --- | --- | --- |
