@@ -2,7 +2,7 @@
 
 # Fancy Table View Selection
 
-Sometimes, you want a tableview that do it all:
+Sometimes, you want a tableview that does it all:
 
 * Tap to navigate
 * multi-select (maybe to group items, share with someone, pay all at once, or something else)
